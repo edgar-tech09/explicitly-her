@@ -2,56 +2,172 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Explicitly Her</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explicitly Her | Women in Tech</title>
+  
+  <link rel="icon" type="image/jpeg" href="favicon.jpg">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
   <link rel="stylesheet" href="style.css">
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Playfair+Display&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
-<section class="hero">
-  <h1>Explicitly Her</h1>
-  <p>Celebrating Women in Tech</p>
-  <a href="#stories" class="btn">Explore Stories</a>
-</section>
+  <header>
+    <nav>
+      <div class="logo">Explicitly Her</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#insights">Insights</a></li>
+        <li><a href="#stories">Stories</a></li>
+        <li><a href="#impact">Impact</a></li>
+      </ul>
+      <button id="theme-toggle" class="theme-btn" aria-label="Toggle Dark Mode">
+        <i class="fa-solid fa-moon"></i>
+      </button>
+    </nav>
+  </header>
 
-<section class="survey">
-  <h2>Insights from Women in Tech</h2>
-  <div class="stats">
-    <div class="stat">78% feel empowered</div>
-    <div class="stat">65% overcame challenges</div>
-    <div class="stat">82% inspire others</div>
-  </div>
-</section>
-
-<section id="stories" class="stories">
-  <h2>Featured Women</h2>
-
-  <div class="cards">
-    <div class="card">
-      <h3>Patricia Camu</h3>
-      <p>Frontend Developer</p>
-      <p>She turned self-doubt into confidence and now leads UI innovation.</p>
+  <section id="home" class="hero reveal">
+    <div class="hero-content">
+      <span class="hero-badge">Women in IT</span>
+      <h1>Explicitly <span class="typewriter-text"></span><span class="cursor">|</span></h1>
+      <p class="hero-subtext">The future of technology is shaped by the resilience, brilliance, and innovation of women.</p>
+      <div class="hero-buttons">
+        <a href="#stories" class="btn primary-btn">Hear Our Stories</a>
+        <a href="#impact" class="btn secondary-btn">See Our Future</a>
+      </div>
     </div>
+  </section>
 
-    <div class="card">
-      <h3>Ana Cruz</h3>
-      <p>Data Analyst</p>
-      <p>From zero coding experience to leading data-driven decisions.</p>
+  <section class="context-section reveal">
+    <div class="interview-question">
+      <span class="q-label"><i class="fa-solid fa-circle-question"></i> The Catalyst</span>
+      <p>"As a woman pursuing a career in Information Technology (IT), a field traditionally dominated by men, how does this environment affect your experience in school? Does it challenge or motivate you in any way?"</p>
+    </div>
+  </section>
+
+  <section id="insights" class="survey reveal">
+    <h2>The Reality of IT</h2>
+    <p class="subtitle">Navigating the tech industry with power and resilience. (Click cards to expand)</p>
+    <div class="stats">
+      <div class="stat clickable-card">
+        <i class="fa-solid fa-mountain stat-icon card-icon"></i>
+        <strong class="card-title">The Challenge</strong>
+        <span class="card-preview">Underestimated but highly capable</span>
+      </div>
+      <div class="stat clickable-card">
+        <i class="fa-solid fa-fire-flame-curved stat-icon card-icon"></i>
+        <strong class="card-title">The Motivation</strong>
+        <span class="card-preview">Breaking stereotypes in tech</span>
+      </div>
+      <div class="stat clickable-card">
+        <i class="fa-solid fa-users stat-icon card-icon"></i>
+        <strong class="card-title">The Community</strong>
+        <span class="card-preview">Uplifted by fellow women & role models</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="stories" class="stories">
+    <h2 class="reveal">Voices of Tomorrow's Leaders</h2>
+    <p class="subtitle reveal">Authentic experiences from women thriving in tech. (Click to read full story)</p>
+
+    <div class="cards">
+      <article class="card reveal clickable-card">
+        <i class="fa-solid fa-quote-left quote-icon card-icon"></i>
+        <h3 class="card-title">Bohdana Yoome V. Balansay</h3>
+        <span class="role card-role">IT Student</span>
+        <blockquote class="card-preview">"Being a woman in IT can be challenging... However, these challenges motivate me to work harder, prove my abilities, and break stereotypes."</blockquote>
+        <div class="full-text" style="display: none;">"Being a woman in IT can be challenging, especially in a male-dominated environment where I may feel underestimated or outnumbered. However, these challenges motivate me to work harder, prove my abilities, and break stereotypes. It pushes me to grow more confident and determined in pursuing my career."</div>
+      </article>
+
+      <article class="card reveal clickable-card">
+        <i class="fa-solid fa-quote-left quote-icon card-icon"></i>
+        <h3 class="card-title">Cellyn S. Sandoval</h3>
+        <span class="role card-role">IT Student</span>
+        <blockquote class="card-preview">"Sometimes it feels like I have to work harder... Seeing other women in tech encourages me, lalo na si Ma'am Belle, my role model, and it makes me feel that I can succeed too."</blockquote>
+        <div class="full-text" style="display: none;">"Being a woman in IT can be challenging for me because mostly sa course and field na toh is men. Sometimes it feels like I have to work harder to show that I can do the same tasks katulad ng kaya nila. Pero this also motivates me na mas matuto and iimprove yung skills na meron ako. Seeing other women in tech encourages me, lalo na si ma'am Belle, my role model and it makes me feel that I can succeed too. Overall, it has made me more confident, determined, and proud to study IT."</div>
+      </article>
+
+      <article class="card reveal clickable-card">
+        <i class="fa-solid fa-quote-left quote-icon card-icon"></i>
+        <h3 class="card-title">Jewey Kristine T. Gumahin</h3>
+        <span class="role card-role">IT Student</span>
+        <blockquote class="card-preview">"It is true that it's a male-dominated field, but that doesn't mean women cannot contribute... we're all sharing the same interest and looking forward to its growth."</blockquote>
+        <div class="full-text" style="display: none;">"As a woman in the IT industry, it is true that it's a men dominated field, but that doesn't mean women cannot contribute to its rapid growth. It doesn't really affect my experience at school since at the end of the day, we're all sharing the same interest and looking forward to its growth."</div>
+      </article>
+
+      <article class="card reveal clickable-card">
+        <i class="fa-solid fa-quote-left quote-icon card-icon"></i>
+        <h3 class="card-title">Jenny Mae N. Tambio</h3>
+        <span class="role card-role">Web Design Enthusiast</span>
+        <blockquote class="card-preview">"Starting out in IT was pretty intimidating... But instead of letting that get to me, I used it as fuel. Once I shifted my focus to web design, everything clicked."</blockquote>
+        <div class="full-text" style="display: none;">"To be honest, starting out in IT was pretty intimidating. It felt like a lot of the guys already had this huge head start with technical stuff, and I struggled to keep up at first. But instead of letting that get to me, I used it as fuel. I realized that while coding wasn't really my thing, I had a natural eye for web design. Once I shifted my focus there, everything clicked. It’s where I feel most confident, and honestly, the challenge of being in this field just makes me want to prove what I can do even more."</div>
+      </article>
+    </div>
+  </section>
+
+  <section id="impact" class="impact reveal">
+    <h2>Shaping the Future</h2>
+    <p class="subtitle">How women are transforming challenges into growth for the tech industry. (Click cards to expand)</p>
+    
+    <div class="impact-grid">
+      <div class="impact-card reveal clickable-card">
+        <i class="fa-solid fa-lightbulb impact-icon card-icon"></i>
+        <h3 class="card-title">Driving Innovation</h3>
+        <p class="card-preview">Women bring fresh, diverse perspectives that are essential for solving complex problems and creating smarter, more inclusive technological solutions.</p>
+      </div>
+      
+      <div class="impact-card reveal clickable-card">
+        <i class="fa-solid fa-handshake-angle impact-icon card-icon"></i>
+        <h3 class="card-title">Empowering the Next Gen</h3>
+        <p class="card-preview">By stepping up as role models and mentors, today's women in IT are building supportive communities that encourage younger girls to enter the field without fear.</p>
+      </div>
+      
+      <div class="impact-card reveal clickable-card">
+        <i class="fa-solid fa-rocket impact-icon card-icon"></i>
+        <h3 class="card-title">Leading the Growth</h3>
+        <p class="card-preview">Breaking stereotypes isn't just about presence; it's about leading development, managing systems, and accelerating the rapid expansion of global tech.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="quotes reveal">
+    <i class="fa-solid fa-star" style="font-size: 2rem; margin-bottom: 20px;"></i>
+    <h2>The Drive</h2>
+    <p class="massive-quote">"The challenge of being in this field just makes me want to prove what I can do even more."</p>
+    <p class="quote-author">- Jenny Mae N. Tambio</p>
+  </section>
+
+  <footer>
+    <p>© 2026 Explicitly Her | Designed to empower women in technology.</p>
+    <p class="school-name">Polytechnic University of the Philippines - San Pedro</p>
+    <p class="author-credit">Author: Edgar Camu Jr.</p>
+  </footer>
+
+  <div id="card-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <div class="modal-header">
+        <i id="modal-icon"></i>
+        <div>
+          <h3 id="modal-title">Title</h3>
+          <span id="modal-role" class="role">Role</span>
+        </div>
+      </div>
+      <div id="modal-body" class="modal-body">
+        Full text will appear here.
+      </div>
     </div>
   </div>
-</section>
 
-<section class="quotes">
-  <h2>Voices</h2>
-  <p>"I wasn’t just coding—I was creating impact."</p>
-</section>
+  <button id="back-to-top" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
 
-<footer>
-  <p>© 2026 Explicitly Her</p>
-</footer>
-
+  <script src="script.js"></script>
 </body>
 </html>
