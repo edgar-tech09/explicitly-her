@@ -1,4 +1,3 @@
-// 1. Dark Mode Toggle Logic
 const themeBtn = document.getElementById('theme-toggle');
 const body = document.body;
 const icon = themeBtn.querySelector('i');
@@ -14,7 +13,6 @@ themeBtn.addEventListener('click', () => {
   }
 });
 
-// 2. Scroll Reveal Animation Logic
 const reveals = document.querySelectorAll('.reveal');
 
 function checkReveal() {
@@ -30,9 +28,8 @@ function checkReveal() {
 }
 
 window.addEventListener('scroll', checkReveal);
-checkReveal(); // I-trigger agad pagka-load
+checkReveal();
 
-// 3. Typing Effect Logic para sa Hero Section
 const textArray = ["Pioneering.", "Leading.", "Innovating.", "Ours."];
 const typingDelay = 100;
 const erasingDelay = 100;
@@ -68,7 +65,6 @@ document.addEventListener("DOMContentLoaded", function() {
   if (textArray.length) setTimeout(type, newTextDelay + 250);
 });
 
-// 4. Back to Top Button Logic
 const backToTopBtn = document.getElementById("back-to-top");
 
 window.addEventListener("scroll", () => {
@@ -83,7 +79,6 @@ backToTopBtn.addEventListener("click", () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
 });
 
-// 5. 3D Interactive Tilt Effect para sa Cards
 const interactiveCards = document.querySelectorAll('.card');
 
 interactiveCards.forEach(card => {
@@ -108,7 +103,6 @@ interactiveCards.forEach(card => {
   });
 });
 
-// 6. POP-UP MODAL LOGIC 
 const modal = document.getElementById('card-modal');
 const closeBtn = document.querySelector('.close-btn');
 const modalTitle = document.getElementById('modal-title');
@@ -120,41 +114,34 @@ const clickableCards = document.querySelectorAll('.clickable-card');
 
 clickableCards.forEach(card => {
   card.addEventListener('click', () => {
-    // Kunin ang data mula sa clinic na card
     const titleText = card.querySelector('.card-title').innerText;
     const iconClass = card.querySelector('.card-icon').className;
     
-    // Check kung may role (para sa stories)
     const roleElem = card.querySelector('.card-role');
     if (roleElem) {
       modalRole.innerText = roleElem.innerText;
       modalRole.style.display = 'inline-block';
     } else {
-      modalRole.style.display = 'none'; // Itago kung walang role (Insights/Impact)
+      modalRole.style.display = 'none';
     }
 
-    // Check kung may nakatagong full text, kung wala, kunin yung preview text
     const fullTextElem = card.querySelector('.full-text');
     const previewTextElem = card.querySelector('.card-preview');
     modalBody.innerText = fullTextElem ? fullTextElem.innerText : previewTextElem.innerText;
 
-    // Ilagay ang data sa modal
     modalTitle.innerText = titleText;
-    modalIcon.className = iconClass; // Kopyahin ang icon
+    modalIcon.className = iconClass; 
 
-    // I-display ang modal
     modal.classList.add('show');
-    document.body.style.overflow = 'hidden'; // Pigilan ang pag-scroll ng background
+    document.body.style.overflow = 'hidden'; 
   });
 });
 
-// Isara ang modal kapag clinic ang 'X'
 closeBtn.addEventListener('click', () => {
   modal.classList.remove('show');
-  document.body.style.overflow = 'auto'; // Ibalik ang scroll
+  document.body.style.overflow = 'auto'; 
 });
 
-// Isara ang modal kapag clinic ang labas (dark background)
 window.addEventListener('click', (e) => {
   if (e.target === modal) {
     modal.classList.remove('show');
